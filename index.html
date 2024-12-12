@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhtar - Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left"><a href="/index.html">Akhtar Portfolio</a></div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSec">
+      <div class="leftSec">
+        Hi, My name is <span class="name">Akhtar</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+        <div class="home-buttons">
+          <button class="cv-button" onclick="window.open('path-to-your-CV.pdf', '_blank')">CV</button>
+          <button class="li-button" onclick="window.open('https://www.linkedin.com', '_blank')">LinkedIn</button>
+          <button class="fiverr-button" onclick="window.open('https://www.fiverr.com', '_blank')">Fiverr</button>
+          <button class="github-button" onclick="window.open('https://github.com', '_blank')">GitHub</button>
+        </div>
+      </div>
+      <div class="rightSec">
+        <img src="image.png" alt="" />
+      </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>© 2025 Akhtar Portfolio</p>
+        <ul class="social-media">
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <p>Contact me at <a href="mailto:akhtar@example.com">akhtar@example.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["<i>Web Developer</i> ", "&amp; <i>Web Designer</i> "],
+      typeSpeed: 50,
+      loop: true,
+      backDelay: 2000,
+      backSpeed: 25,
+    });
+  </script>
+</body>
+
+</html>
